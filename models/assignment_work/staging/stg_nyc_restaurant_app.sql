@@ -70,10 +70,8 @@ cleaned AS (
    FROM source
 
    -- Filters
-   WHERE (agency = 'DOT' OR agency_name LIKE '%Transportation%')
-   AND unique_key IS NOT NULL
-   AND created_date IS NOT NULL
-   AND CAST(created_date AS DATE) >= DATE_SUB(CURRENT_DATE(), INTERVAL 7 YEAR)
+   WHERE objectid IS NOT NULL
+   AND time_of_submission IS NOT NULL
    AND borough IS NOT NULL
 
    -- Deduplicate
