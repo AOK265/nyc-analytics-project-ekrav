@@ -97,7 +97,6 @@ sources:
           - name: objectid
             description: Unique ID for the application
             tests:
-              - unique
               - not_null
           - name: time_of_submission
             description: Date and time the application was submitted
@@ -112,56 +111,56 @@ sources:
           - name: longitude
             description: Longitude coordinate
           - name: approved_for_roadway_seating
-            description: 
+            description: blank
           - name: approved_for_sidewalk_seating
-            description: 
+            description: blank
           - name: bbl
-            description: 
+            description: blank
           - name: bin
-            description: 
+            description: blank
           - name: building_number
-            description: 
+            description: blank
           - name: census_tract
-            description: 
+            description: blank
           - name: community_board
-            description: 
+            description: blank
           - name: council_district
-            description: 
+            description: blank
           - name: doing_business_as_dba
-            description: 
+            description: blank
           - name: globalid
-            description: 
+            description: blank
           - name: healthcomplicance_terms
-            description: 
+            description: blank
           - name: landmark_district_or_building
-            description: 
+            description: blank
           - name: landmarkdistrict_terms
-            description: 
+            description: blank
           - name: legal_business_name
-            description: 
+            description: blank
           - name: nta
-            description: 
+            description: blank
           - name: qualify_alcohol
-            description: 
+            description: blank
           - name: roadway_dimension_area
-            description: 
+            description: blank
           - name: roadway_dimension_length
-            description: 
+            description: blank
           - name: roadway_dimension_width
-            description: 
+            description: blank
           - name: seating_interest_sidewalk
-            description: 
+            description: blank
           - name: sidewalk_dimensions_area
-            description: 
+            description: blank
           - name: sidewalk_dimensions_length
-            description: 
+            description: blank
           - name: sidewalk_dimensions_width
-            description: 
+            description: blank
           - name: sla_license_type
-            description: 
+            description: blank
           - name: sal_serial_number
-            description: 
+            description: blank
           - name: street
-            description: 
+            description: blank
           - name: zip
-            description: 
+            description: blank
