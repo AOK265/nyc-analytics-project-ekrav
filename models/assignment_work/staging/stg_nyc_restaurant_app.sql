@@ -20,6 +20,8 @@ cleaned AS (
            sidewalk_dimensions_length,
            sidewalk_dimensions_width,
            borough,
+           latitude,
+           longitude,
            zip
        ),
 
