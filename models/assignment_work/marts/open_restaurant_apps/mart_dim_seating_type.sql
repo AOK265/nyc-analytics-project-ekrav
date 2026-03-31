@@ -3,9 +3,9 @@ WITH seating_types AS (
    SELECT DISTINCT
        seating_interest_sidewalk AS seating_interest,
        case
-            when approved_for_sidewalk_seating = 'yes' then TRUE else FALSE end as approved_for_sidewalk
+            when approved_for_sidewalk_seating = 'yes' then TRUE else FALSE end as approved_for_sidewalk,
         case    
-            when approved_for_roadway_seating 'yes' then TRUE else FALSE 
+            when approved_for_roadway_seating 'yes' then TRUE else FALSE end
 --TODO: Replace this comment with a CASE WHEN .. statement that handles the different possibilities for approved_for_sidewalk_seating and approved_for_roadway_seating in the data
 --NOTE: The final result we want to select here is two boolean columns (TRUE or FALSE values in them), one column approved_for_sidewalk (TRUE or FALSE value), and one column approved_for_roadway 
       AS approved_for_roadway
