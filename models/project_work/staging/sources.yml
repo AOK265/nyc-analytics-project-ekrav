@@ -91,10 +91,9 @@ sources:
             description: Nearby landmark or point of interest
 
 
-    schema: cis_9440_group_project
 
-    tables:
-      - name: source_nyc_motor_vehicle_collision
+
+      - name: load-nyc-motor-vehicle-collision-data
         description: |
           NYC motor vehicle collision data. 
           One row represent one collision reported.
