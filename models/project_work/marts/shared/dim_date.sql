@@ -4,7 +4,7 @@ WITH all_dates AS (
    -- Get dates (dates, no time included) from 311 requests
    SELECT DISTINCT CAST(crash_date AS DATE) AS full_date
    FROM {{ ref('staging_tbl_veh_collision') }}
-   WHERE created_date IS NOT NULL
+   WHERE crash_date IS NOT NULL
 
    UNION DISTINCT
 
