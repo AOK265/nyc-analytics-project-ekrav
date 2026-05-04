@@ -40,9 +40,11 @@ WITH all_locations AS (
 
 location_dimension AS (
    SELECT
-       {{ dbt_utils.generate_surrogate_key(['borough', 'zip_code']) }} AS location_key,
+       {{ dbt_utils.generate_surrogate_key(['borough', 'zip_code', 'cross_street_1', 'cross_street_2']) }} AS location_key,
        borough,
-       zip_code
+       zip_code,
+       cross_street_1,
+       cross_street_2
    FROM all_locations
 )
 
